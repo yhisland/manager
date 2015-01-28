@@ -1,0 +1,6 @@
+#jdbcUrl = jdbc:mysql://127.0.0.1/jfinal_demo?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+driverClass = oracle.jdbc.driver.OracleDriver
+jdbcUrl = jdbc:oracle:thin:@127.0.0.1:1521:myoracle
+user = zzh
+password = 123456
+devMode = true
