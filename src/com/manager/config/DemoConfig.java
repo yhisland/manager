@@ -10,6 +10,8 @@ import com.jfinal.config.Plugins;
 import com.jfinal.config.Routes;
 import com.jfinal.core.JFinal;
 import com.jfinal.ext.route.AutoBindRoutes;
+import com.jfinal.plugin.activerecord.ActiveRecordPlugin;
+import com.jfinal.plugin.druid.DruidPlugin;
 
 /**   
  * 类名称：DemoConfig   
@@ -64,7 +66,15 @@ public class DemoConfig extends JFinalConfig {
 		atbp.setDialect(new OracleDialect());
 		atbp.setContainerFactory(new CaseInsensitiveContainerFactory());// 配置属性名(字段名)大小写不敏感容器工厂
 		me.add(atbp);*/
-	}
+		
+/*		String decPassWord =getProperty("password");
+		String decUser =getProperty("user");
+		DruidPlugin druid = new DruidPlugin(getProperty("url"),decUser,decPassWord);
+		me.add(druid);//添加连接池
+		ActiveRecordPlugin arp =new ActiveRecordPlugin(druid);
+		me.add(arp);//接入ActiveRecordPlugin插件
+		arp.addMapping("t_user",User.class);//实体与表的映射		
+*/	}
 	
 	/**
 	 * 配置全局拦截器

@@ -24,6 +24,6 @@ public class LoginContoller extends Controller {
         }
 		public void searchAll(){
 			List<Login> list	 = Login.dao.gettotal();
-			renderJson(JsonKit.listToJson(list, 3));
+//			renderJson(JsonKit.listToJson(list, 3));
 		}
 }
