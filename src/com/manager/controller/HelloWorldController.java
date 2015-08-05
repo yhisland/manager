@@ -7,14 +7,15 @@ import com.jfinal.ext.route.ControllerBind;
 public class HelloWorldController extends Controller{
 	  
     public void index() {  
-/*		String msg ="welcome to JFinal World!!! ";
+		String msg ="welcome to JFinal World!!!2 ";
 		setAttr("HelloWorld", msg);
-		renderFreeMarker("helloworld.html");*/
+		renderFreeMarker("helloworld.html");
 		
-       render("/hello.html");  
+//       render("/hello.html");  
     }  
   
     public void hello() {  
+    	//http://localhost/hello/hello
         renderText("hello() Hello JFinal World.");  
     } 
 }

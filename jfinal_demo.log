@@ -185,3 +185,9 @@ Caused by: java.io.FileNotFoundException: Template /hello/helloworld.html not fo
 	at freemarker.template.Configuration.getTemplate(Configuration.java:452)
 	at com.jfinal.render.FreeMarkerRender.render(FreeMarkerRender.java:127)
 	... 25 more
+
+2015-08-05 11:10:51
+[WARN]-[Thread: qtp375801146-17]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /E$/%E5%AE%BD%E5%B8%A6/%E8%AE%BE%E5%A4%87%E7%89%A9%E6%96%99/%E7%89%A9%E6%96%99%E7%94%B3%E8%AF%B7/%E5%85%B3%E4%BA%8E%E5%8D%97%E5%BA%B7%E6%96%B0%E5%BB%BA%E8%90%A5%E4%B8%9A%E5%8E%85%E4%B8%93%E7%BA%BF%E6%8D%9F%E8%80%97%E5%93%81%E6%9D%90%E6%96%99%E7%9A%84%E7%94%B3%E8%AF%B7
+
+2015-08-05 11:12:16
+[WARN]-[Thread: qtp375801146-17]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /E$/%E5%AE%BD%E5%B8%A6/%E8%90%A5%E4%B8%9A%E5%8E%85%E6%96%B9%E6%A1%88/%E6%96%B0%E5%BB%BA%E6%96%B9%E6%A1%88/20150804%E5%8D%97%E5%BA%B7%E9%93%81%E9%80%9A%E6%8C%87%E5%AE%9A%E4%B8%93%E8%90%A5%E5%BA%97
