@@ -191,3 +191,12 @@ Caused by: java.io.FileNotFoundException: Template /hello/helloworld.html not fo
 
 2015-08-05 11:12:16
 [WARN]-[Thread: qtp375801146-17]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /E$/%E5%AE%BD%E5%B8%A6/%E8%90%A5%E4%B8%9A%E5%8E%85%E6%96%B9%E6%A1%88/%E6%96%B0%E5%BB%BA%E6%96%B9%E6%A1%88/20150804%E5%8D%97%E5%BA%B7%E9%93%81%E9%80%9A%E6%8C%87%E5%AE%9A%E4%B8%93%E8%90%A5%E5%BA%97
+
+2015-08-05 22:41:03
+[WARN]-[Thread: qtp24665869-14]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /test
+
+2015-08-05 22:41:10
+[WARN]-[Thread: qtp24665869-13]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /manger
+
+2015-08-05 22:41:17
+[WARN]-[Thread: qtp24665869-18]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /manger
