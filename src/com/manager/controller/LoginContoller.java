@@ -23,7 +23,7 @@ public class LoginContoller extends Controller {
 	        render("/login.htm");
         }
 		public void searchAll(){
-			List<Login> list	 = Login.dao.gettotal();
+			List<Login> list = Login.dao.gettotal();
 //			renderJson(JsonKit.listToJson(list, 3));
 		}
 }

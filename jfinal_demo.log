@@ -200,3 +200,68 @@ Caused by: java.io.FileNotFoundException: Template /hello/helloworld.html not fo
 
 2015-08-05 22:41:17
 [WARN]-[Thread: qtp24665869-18]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /manger
+
+2015-08-08 09:27:12
+[WARN]-[Thread: qtp2053315696-15]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /test
+
+2015-08-08 18:12:31
+[WARN]-[Thread: qtp2053315696-55]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /echarts/pie
+
+2015-08-08 18:12:36
+[WARN]-[Thread: qtp2053315696-55]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /echarts/pie
+
+2015-08-08 18:12:38
+[WARN]-[Thread: qtp2053315696-60]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /echarts/pie
+
+2015-08-08 18:14:08
+[WARN]-[Thread: qtp2053315696-55]-[com.jfinal.core.ActionHandler.handle()]: 404 Action Not Found: /echarts/pie
+
+2015-08-08 23:40:03
+[ERROR]-[Thread: main]-[com.jfinal.core.Config.startPlugins()]: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+ActiveRecord start error: ActiveRecordPlugin need DataSource or DataSourceProvider
+java.lang.RuntimeException: ActiveRecord start error: ActiveRecordPlugin need DataSource or DataSourceProvider
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:165)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.manager.config.DemoConfig.main(DemoConfig.java:188)
+
+2015-08-08 23:40:17
+[ERROR]-[Thread: main]-[com.jfinal.core.Config.startPlugins()]: Plugin start error: com.jfinal.plugin.activerecord.ActiveRecordPlugin. 
+ActiveRecord start error: ActiveRecordPlugin need DataSource or DataSourceProvider
+java.lang.RuntimeException: ActiveRecord start error: ActiveRecordPlugin need DataSource or DataSourceProvider
+	at com.jfinal.plugin.activerecord.ActiveRecordPlugin.start(ActiveRecordPlugin.java:165)
+	at com.jfinal.core.Config.startPlugins(Config.java:87)
+	at com.jfinal.core.Config.configJFinal(Config.java:48)
+	at com.jfinal.core.JFinal.init(JFinal.java:67)
+	at com.jfinal.core.JFinalFilter.init(JFinalFilter.java:49)
+	at org.eclipse.jetty.servlet.FilterHolder.doStart(FilterHolder.java:119)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:724)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:265)
+	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1250)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:706)
+	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:492)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.doStart(HandlerWrapper.java:95)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:277)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64)
+	at com.jfinal.server.JettyServer.doStart(JettyServer.java:120)
+	at com.jfinal.server.JettyServer.start(JettyServer.java:64)
+	at com.jfinal.core.JFinal.start(JFinal.java:159)
+	at com.manager.config.DemoConfig.main(DemoConfig.java:188)

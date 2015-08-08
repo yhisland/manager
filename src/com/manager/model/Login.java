@@ -16,12 +16,13 @@ import com.jfinal.plugin.activerecord.Page;
  * 修改备注：        
  *    
  */ 
-@TableBind(tableName= "shop_total",pkName="id")
+@TableBind(tableName= "student",pkName="id")
 public class Login  extends Model<Login>{
 	  public   static final Login dao = new Login();
 	  Page<Login>list;
 	  public List<Login> gettotal(){
-	      List<Login>  list1 = dao.find("select  *  from  shop_total");
+	      List<Login>  list1 = dao.find("select  *  from  student");
+	      System.out.println(list1);
 		  return list1;
 	  }
 
