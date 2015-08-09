@@ -6,7 +6,7 @@ var indexdata =
 	]
     },
     { text: '物料使用分析', isexpand: false, children: [
-		{ url: "login.htm", text: "网线使用分析" }
+		{ url: "http://localhost/login", text: "网线使用分析" }
 	]
     },
     {url:"echarts.html",text:"echarts"}

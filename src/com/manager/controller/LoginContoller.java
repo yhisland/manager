@@ -1,7 +1,9 @@
 package com.manager.controller;
 
+import java.lang.reflect.Method;
 import java.util.List;
 
+import com.alibaba.fastjson.JSONObject;
 import com.jfinal.core.Controller;
 import com.jfinal.ext.route.ControllerBind;
 import com.jfinal.kit.JsonKit;
@@ -26,4 +28,22 @@ public class LoginContoller extends Controller {
 			List<Login> list = Login.dao.gettotal();
 //			renderJson(JsonKit.listToJson(list, 3));
 		}
+			
+		//图形
+		public void getList() throws Exception{
+			String str="{}";
+			JSONObject obj = new JSONObject();
+		    obj=JSONObject.parseObject(getPara("where",str));
+			int page=getParaToInt("page",1);
+			int pagesize=getParaToInt("pagesize",20);
+			String sortname = getPara("sortname");
+			String sortorder = getPara("sortorder");
+			List<Login> list = Login.dao.getList(page, pagesize, obj,sortname,sortorder);
+			//反调listToJson
+			Method method = JsonKit.class.getDeclaredMethod("listToJson", new Class[]{String.class,String.class});  
+			method.setAccessible(true);
+			Object data = method.invoke(new JsonKit(), list, 3);
+		//	Object data = JsonKit.listToJson(list, 3);
+			renderJson(data);
+		}		
 }
